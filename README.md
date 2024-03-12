@@ -1,19 +1,46 @@
 # Real-world Data Wrangling
-In this project, you will apply the skills you acquired in the course to gather and wrangle real-world data with two datasets of your choice.
+Vehicle Makes and Road Safety Issues Correlation
+This project investigates whether certain car makes and models are more likely to be involved in traffic violations and crashes. We analyze data from two datasets: one focusing on traffic violations and the other on crash reports. By comparing vehicle characteristics across these datasets, we aim to identify any trends that could help improve road safety measures.
 
-You will retrieve and extract the data, assess the data programmatically and visually, accross elements of data quality and structure, and implement a cleaning strategy for the data. You will then store the updated data into your selected database/data store, combine the data, and answer a research question with the datasets.
+Data Gathering
+We extract data using two different methods:
 
-Throughout the process, you are expected to:
+Programmatically downloading the 'Crash_Reporting_-_Drivers_Data' file.
+Manually downloading the 'Traffic_Violations' file.
+Datasets
+Crash_Reporting_-_Drivers_Data
+The data is programmatically downloaded from the official source using a custom function designed to fetch the dataset from a given URL. This ensures the latest and most accurate information is obtained for analysis.
 
-Explain your decisions towards methods used for gathering, assessing, cleaning, storing, and answering the research question
-Write code comments so your code is more readable
-1. Gather data
-In this section, you will extract data using two different data gathering methods and combine the data. Use at least two different types of data-gathering methods.
+Variables:
 
-Programmatically downloading file 'Crash_Reporting_-_Drivers_Data'
-Download data manually 'Traffic_Violations'
-1.1. Problem Statement
-In this project, I will investigate whether certain car makes and models are more likely to be involved in traffic violations and crashes. I will analyze data from two datasets: one focusing on traffic violations and the other on crash reports. By comparing vehicle characteristics across these datasets, I aim to identify any trends that could help improve road safety measures.
+Vehicle Make: Represents the manufacturer or brand of the vehicle involved in the crash.
+Vehicle Model: Refers to the specific model of the vehicle.
+Vehicle Year: Indicates the manufacturing year of the vehicle.
+Collision Type: Specifies the type of collision that occurred in the crash.
+Driver At Fault: Indicates whether the driver was at fault in the crash.
+Traffic_Violations
+The data is downloaded manually from the official source website: data.gov
 
-1.2. Gather at least two datasets using two different data gathering methods
-List of data gathering methods:
+Variables:
+
+Violation Type: Specifies the type of traffic violation committed.
+Make: Represents the manufacturer or brand of the vehicle involved.
+Model: Refers to the specific model of the vehicle.
+Year: Indicates the manufacturing year of the vehicle.
+Data Assessment
+We assess the data according to data quality and tidiness metrics. We list two data quality issues and two tidiness issues. We assess each data issue visually and programmatically, then briefly describe the issue we find. We include justifications for the methods we use for the assessment.
+
+Data Cleaning
+We clean the data to solve the 4 issues corresponding to data quality and tidiness found in the assessing step. After the cleaning for each issue, we use either the visually or programmatical method to validate the cleaning was successful. At this stage, we also remove variables that are unnecessary for our analysis and combine our datasets.
+
+Analysis
+We use the cleaned data to answer our research question. We produce at least two visualizations using the cleaned data and explain how they help us answer the question.
+
+Data Storing
+We update our local database/data store with the cleaned data, following best practices for storing our cleaned data:
+
+We maintain different instances/versions of data (raw and cleaned data).
+We name the dataset files informatively.
+We ensure both the raw and cleaned data is saved to our database/data store.
+Project Reflection
+We reflect on the project and discuss any further actions we would take if given more time to complete the project. We also explain how we would share our findings with different stakeholders.
