@@ -1,4 +1,3 @@
-# Real-world Data Wrangling
 Vehicle Makes and Road Safety Issues Correlation
 This project investigates whether certain car makes and models are more likely to be involved in traffic violations and crashes. We analyze data from two datasets: one focusing on traffic violations and the other on crash reports. By comparing vehicle characteristics across these datasets, we aim to identify any trends that could help improve road safety measures.
 
